@@ -1,0 +1,25 @@
+<section id="onprem" class="dark">
+<div class="head">
+<p class="eyebrow">地端 FLASH-NEXT 的限制</p>
+<h2 class="title">地端只會更差：上下文已經碰到原生上限</h2>
+</div>
+<div class="row" style="gap:64px">
+<div class="grow" style="display:flex;flex-direction:column;gap:18px">
+<p class="small">Qwen 每關最長一次請求的 token，對地端原生上限 262,144</p>
+<div class="bars">
+<div class="bar-row"><p class="bar-label" style="width:260px">S1P 照片推佈局</p><div class="bar-track" style="background:#2C3E4E"><div class="bar-fill over" style="width:100%"></div></div><p class="bar-val" style="width:200px">105%</p></div>
+<div class="bar-row"><p class="bar-label" style="width:260px">D1 竣工比對</p><div class="bar-track" style="background:#2C3E4E"><div class="bar-fill" style="width:92%;background:#F0A35E"></div></div><p class="bar-val" style="width:200px">92%</p></div>
+<div class="bar-row"><p class="bar-label" style="width:260px">D5 三視圖建模</p><div class="bar-track" style="background:#2C3E4E"><div class="bar-fill" style="width:89%;background:#F0A35E"></div></div><p class="bar-val" style="width:200px">89%</p></div>
+<div class="bar-row"><p class="bar-label" style="width:260px">S1 hard</p><div class="bar-track" style="background:#2C3E4E"><div class="bar-fill" style="width:48%;background:#8B98A5"></div></div><p class="bar-val" style="width:200px">48%</p></div>
+<div class="bar-row"><p class="bar-label" style="width:260px">D3 管線繞行</p><div class="bar-track" style="background:#2C3E4E"><div class="bar-fill" style="width:40%;background:#8B98A5"></div></div><p class="bar-val" style="width:200px">40%</p></div>
+<div class="bar-row"><p class="bar-label" style="width:260px">D2 佈局設計</p><div class="bar-track" style="background:#2C3E4E"><div class="bar-fill" style="width:37%;background:#8B98A5"></div></div><p class="bar-val" style="width:200px">37%</p></div>
+</div>
+<p class="small">S1P 用到 274,507 token，原生設定下會中途中斷。最難的關卡正好用得最多。</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px;width:560px">
+<div class="card"><p class="num-m c-qwen">約 360 GB</p><p class="body">BF16 權重（約 180B 參數）。硬體不夠就要量化，能力再下降，降多少沒有公開數據。</p></div>
+<div class="card"><p class="num-m c-qwen">原廠雲端</p><p class="body">這次測的是全精度、1M 上下文的託管版。地端每項條件都不會更好。</p></div>
+</div>
+</div>
+<aside>以上是依據事實的推論，不是地端實測。模型卡說可用 YaRN 延伸到 1M，但延伸後的品質沒有公開數據。官方只說雲端版以 Flash-Next 為基礎，沒有說權重相同。授權是 qwen-community-1.0，商用前要確認。</aside>
+</section>

@@ -2,7 +2,7 @@
 
 這個 repo 是一套可以在地端重現的測試：讓模型只透過一個 `bench` 指令操作無頭 Blender，完成 AI 機房建模流程的 10 個關卡，再用程式自動計分。
 
-**結論（雲端實測）**：Qwen 3.8 Flash 即使是條件最好的雲端託管版，也有 2 個關卡不及格——「看現場照片推回佈局」52.6 分、「設計圖對現場照片找差異」60 分（Opus 5.5 為 96.1 與 100）。10 關加權總分 Qwen 62.7、Opus 99.1。地端 Flash-Next 的上下文、精度和速度條件都不會比雲端版好，因此這條流程建議使用 Opus。完整報告：[`report/full_report.html`](report/full_report.html)（下載後用瀏覽器開啟）。
+**結論（雲端實測）**：Qwen 3.8 Flash 即使是條件最好的雲端託管版，也有 2 個關卡不及格——「看現場照片推回佈局」52.6 分、「設計圖對現場照片找差異」60 分（Opus 5.5 為 96.1 與 100）。10 關加權總分 Qwen 62.7、Opus 99.1。地端 Flash-Next 的上下文、精度和速度條件都不會比雲端版好，因此這條流程建議使用 Opus。完整報告：[`report/full_report.html`](report/full_report.html)（下載後用瀏覽器開啟）；簡報：[`report/slides.pdf`](report/slides.pdf)。
 
 這個 repo 的用途是**在地端實測確認**這個推論。
 
@@ -61,6 +61,6 @@ Qwen 每一關都比 Opus 慢 1.8–15 倍；S1P 的最長對話 274,507 token �
 | `score/` | 各關卡計分程式與檢視圖工具 |
 | `scripts/` | 一鍵執行、重建答案卷、計分彙整 |
 | `reference/` | 報告所用的雲端 Opus 與 Qwen 執行紀錄 |
-| `report/` | 完整報告與第一階段報告（單一 HTML 檔） |
+| `report/` | 完整報告與第一階段報告（單一 HTML 檔）；簡報 `slides.html`（方向鍵翻頁）與 `slides.pdf`，原始檔在 `report/slides/`，用 `report/build_slides.py` 重建 |
 
 來源：從 `clarencechien/opus55poc`（分支 `claude/eloquent-lovelace-4vrek4`，目錄 `datacenter/`）整理而來。

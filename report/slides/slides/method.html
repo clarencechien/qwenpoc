@@ -1,0 +1,21 @@
+<section id="method" class="cool">
+<div class="head">
+<p class="eyebrow">測試方式</p>
+<h2 class="title">兩個模型用同一套工具操作 Blender，程式對答案卷計分</h2>
+</div>
+<div class="flow">
+<div class="step in" style="--i:0"><h3>模型</h3><p>Opus 5.5 或 Qwen 3.8 Flash，推理強度都是 high</p></div>
+<div class="arrow"></div>
+<div class="step in" style="--i:1"><h3>bench 指令</h3><p>唯一的操作介面，每關最多 60 次</p></div>
+<div class="arrow"></div>
+<div class="step in" style="--i:2"><h3>無頭 Blender</h3><p>模型自己寫 Python 建模</p></div>
+<div class="arrow"></div>
+<div class="step in" style="--i:3"><h3>計分程式</h3><p>對答案卷自動給分，沒有人為給分</p></div>
+</div>
+<div class="row">
+<div class="card grow"><h3>題目一字不差</h3><p class="body">兩邊拿到同一份任務說明、同樣的時間上限（45 或 60 分鐘）。</p></div>
+<div class="card grow"><h3>看不到答案</h3><p class="body">答案卷不在 repo 裡，用固定種子重建；Opus 跑時不在磁碟上。</p></div>
+<div class="card grow"><h3>10 個關卡</h3><p class="body">第一階段 6 關照圖面和照片建模；第二階段 4 關沒有答案可抄。</p></div>
+</div>
+<aside>Qwen 的工具限制由程式強制；Opus 是全新的 Claude Code session，限制靠指令並事後稽核對話紀錄。Qwen 用的是 OpenRouter 上的雲端託管版，不是地端版。</aside>
+</section>

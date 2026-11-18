@@ -1,0 +1,28 @@
+<section id="code">
+<div class="head">
+<p class="eyebrow">程式問題</p>
+<h2 class="title">Qwen 靠反覆試錯：腳本多 4 倍、失敗多 27 倍</h2>
+</div>
+<div class="row">
+<div class="card grow in" style="--i:0">
+<p class="small">10 關寫的 Blender 腳本</p>
+<p class="num-m"><span class="c-opus">45</span> <span class="small">vs</span> <span class="c-qwen">174</span></p>
+<p class="body">Opus 對 Qwen</p>
+</div>
+<div class="card grow in" style="--i:1">
+<p class="small">執行時報錯的腳本</p>
+<p class="num-m"><span class="c-opus">1</span> <span class="small">vs</span> <span class="c-qwen">27</span></p>
+<p class="body">Opus 對 Qwen</p>
+</div>
+<div class="card grow in" style="--i:2">
+<p class="small">被擋下的違規指令</p>
+<p class="num-m"><span class="c-opus">0</span> <span class="small">vs</span> <span class="c-qwen">37</span></p>
+<p class="body">想用管線、重導向等禁止的寫法</p>
+</div>
+</div>
+<div class="row">
+<div class="card grow"><h3>Opus 的作法</h3><p class="body">管線繞行寫了 3D 尋路程式；竣工比對寫相機投影，把設計圖投到照片上逐台比對。</p></div>
+<div class="card grow"><h3>Qwen 的作法</h3><p class="body">三視圖建模寫了 14 支逐步修補的腳本；Gemini 程式審查指出輔助物件沒清、挖孔位置錯。</p></div>
+</div>
+<aside>腳本數和失敗數直接從執行紀錄統計。程式碼審查（Gemini 4 Carbon，匿名）只做了 S3 hard 一關：Opus 結構清楚、有自我檢查；Qwen 自我檢查和程式品質都只有 3 分（滿分 5）。</aside>
+</section>

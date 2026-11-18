@@ -1,0 +1,31 @@
+<section id="rule">
+<div class="head">
+<p class="eyebrow">判定規則</p>
+<h2 class="title">每關都要 ≥ 80%，加權總分也要 ≥ 80</h2>
+</div>
+<div class="row" style="flex:1">
+<div class="grow" style="display:flex;flex-direction:column;gap:20px">
+<p class="body">流程是串接的，前一關錯了，後面的 3D 場景就跟著錯，所以先要求每關都通過，再比加權總分。</p>
+<ul class="list">
+<li>正確性 70 分：照片推佈局、竣工比對各 15 分，佈局設計 10 分，其餘每關 2–5 分</li>
+<li>效率 30 分：各關「最快用時 ÷ 自己用時」的平均</li>
+<li>配分是看到結果後才訂的，所以下一頁列出其他配分方式</li>
+</ul>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px;width:620px">
+<div class="card">
+<p class="small">Opus 5.5</p>
+<p class="num-m c-opus">99.1</p>
+<p class="body">正確性 69.1 + 效率 30.0</p>
+<p class="pill pass">通過</p>
+</div>
+<div class="card">
+<p class="small">Qwen 3.8 Flash（雲端）</p>
+<p class="num-m c-qwen">62.7</p>
+<p class="body">正確性 55.4 + 效率 7.2；2 關未達 80%</p>
+<p class="pill fail">不通過</p>
+</div>
+</div>
+</div>
+<aside>照片推佈局和竣工比對配最重，因為答案不在輸入資料裡，要靠模型自己判斷空間，而實際驗收的輸入就是現場照片。</aside>
+</section>
