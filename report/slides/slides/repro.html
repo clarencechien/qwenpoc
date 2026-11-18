@@ -1,22 +1,22 @@
-<section id="repro" class="cool">
+<section id="repro">
 <div class="head">
 <p class="eyebrow">下一步</p>
 <h2 class="title">在地端實測確認：github.com/clarencechien/qwenpoc</h2>
 </div>
 <div class="row">
-<div class="grow" style="display:flex;flex-direction:column;gap:16px">
-<p class="body"><b>1</b> 安裝 Blender 與 bench 指令</p>
+<div class="grow col" style="gap:10px">
+<p class="body"><b>1　安裝 Blender 與 bench 指令</b></p>
 <p class="code">sudo bash bench/install.sh</p>
-<p class="body"><b>2</b> 對地端端點跑 10 關</p>
+<p class="body"><b>2　對地端端點跑 10 關</b></p>
 <p class="code">python3 scripts/run_all.py --runs runs/onprem --base-url http://HOST:8000/v1</p>
-<p class="body"><b>3</b> 全部跑完後才重建答案卷</p>
+<p class="body"><b>3　全部跑完後才重建答案卷</b></p>
 <p class="code">bash scripts/make_keys.sh ~/qwenpoc-keys</p>
-<p class="body"><b>4</b> 計分並和雲端成績對照</p>
+<p class="body"><b>4　計分並和雲端成績對照</b></p>
 <p class="code">python3 scripts/score_all.py --runs runs/onprem --keys ~/qwenpoc-keys</p>
 </div>
-<div class="card" style="width:520px">
+<div class="card" style="width:500px">
 <h3>請一併記錄</h3>
-<ul class="list" style="font-size:26px">
+<ul class="list" style="font-size:26px;gap:8px">
 <li>精度與量化方式</li>
 <li>GPU 配置</li>
 <li>推論框架與版本</li>
@@ -25,5 +25,6 @@
 <p class="small">也可以交給 Codex 或 Claude Code 操作：repo 裡的 AGENTS.md 有逐步指示。</p>
 </div>
 </div>
-<aside>答案卷重建後會用雜湊比對確認和報告用的相同；score_all.py --verify-reference 可在地端重算 20 筆參考成績。</aside>
+<p class="take">重現套件已驗證：答案卷雜湊一致，<span class="k">20 筆參考成績重算全部相符</span>。</p>
+<aside>答案卷重建後會用雜湊比對確認和報告用的相同；score_all.py --verify-reference 可在地端重算 20 筆參考成績。答案卷要等全部跑完才建，因為模型執行的 Python 沒有沙箱。</aside>
 </section>

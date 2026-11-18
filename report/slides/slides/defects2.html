@@ -1,17 +1,17 @@
-<section id="defects2" class="cool">
+<section id="defects2">
 <div class="head">
 <p class="eyebrow">3D 元件缺失 · 其他關卡</p>
 <h2 class="title">Qwen 交出的場景裡，有現場不存在的設備</h2>
 </div>
-<table class="t">
-<tr><th style="width:20%">關卡</th><th style="width:34%">Opus</th><th style="width:46%">Qwen</th></tr>
-<tr class="hl"><td>S1P 照片推佈局</td><td>8 個 600 mm 櫃看成 6 個 GPU 櫃</td><td>2 整列位置錯、多 4 櫃、空調只對 1 台</td></tr>
-<tr class="hl"><td>D1 竣工比對</td><td>沒有缺失，60 台全部相符</td><td>6 台現場沒有的設備留著；4 台現場有的沒建</td></tr>
-<tr><td>D2 佈局設計</td><td>0 違規</td><td>0 違規，但北側空著，少 26 櫃</td></tr>
-<tr><td>D3 管線繞行</td><td>6 條都是最短路線</td><td>3 條多繞路、多 1–2 個彎頭</td></tr>
-<tr><td>D5 三視圖建模</td><td>背面水管 1 處小偏差</td><td>腳太大，背面水管、門把、頂部管口偏移</td></tr>
-<tr><td>S3 擺放（hard）</td><td>連結複製，6.1 萬三角面</td><td>位置全對，但 10.6 萬三角面，場景較重</td></tr>
-</table>
-<p class="lead">照片類關卡的錯誤會直接變成錯的 3D 場景，後面的擺放和呈現都跟著錯。</p>
-<aside>S1 的房間殼體兩邊都沒有缺失；北側熱通道兩邊都只畫到柱線。</aside>
+<div class="tbl roomy">
+<div class="tr th"><p class="c" style="width:300px">關卡</p><p class="c1">Opus</p><p class="cw" style="width:720px">Qwen</p></div>
+<div class="tr hl"><p class="c strong" style="width:300px">S1P 照片推佈局</p><p class="c1">8 個 600 mm 櫃看成 6 個 GPU 櫃</p><p class="cw bad" style="width:720px">2 整列位置錯、多 4 櫃、空調只對 1 台</p></div>
+<div class="tr hl"><p class="c strong" style="width:300px">D1 竣工比對</p><p class="c1">沒有缺失，60 台全部相符</p><p class="cw bad" style="width:720px">6 台現場沒有的設備留著；4 台現場有的沒建</p></div>
+<div class="tr"><p class="c strong" style="width:300px">D2 佈局設計</p><p class="c1">0 違規</p><p class="cw" style="width:720px">0 違規，但北側空著，少 26 櫃</p></div>
+<div class="tr"><p class="c strong" style="width:300px">D3 管線繞行</p><p class="c1">6 條都是最短路線</p><p class="cw" style="width:720px">3 條多繞路、多 1–2 個彎頭</p></div>
+<div class="tr"><p class="c strong" style="width:300px">D5 三視圖建模</p><p class="c1">背面水管 1 處小偏差</p><p class="cw" style="width:720px">腳太大，背面水管、門把、頂部管口偏移</p></div>
+<div class="tr"><p class="c strong" style="width:300px">S3 擺放（hard）</p><p class="c1">連結複製，6.1 萬三角面</p><p class="cw" style="width:720px">位置全對，但 10.6 萬三角面，場景較重</p></div>
+</div>
+<p class="take">照片類關卡的錯誤會<span class="k">直接變成錯的 3D 場景</span>，後面的擺放和呈現都跟著錯。</p>
+<aside>紅底兩列是實質錯誤：場景和現場不符。其餘是品質差異。S1 的房間殼體兩邊都沒有缺失。</aside>
 </section>

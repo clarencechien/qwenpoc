@@ -1,26 +1,27 @@
-<section id="defects">
+<section id="defects" style="gap:26px">
 <div class="head">
 <p class="eyebrow">3D 元件缺失 · S2 照片 → 機櫃模型</p>
 <h2 class="title">尺寸都對，但 Qwen 漏了任務要求的零件</h2>
 </div>
-<img src="/_blob/9d09ff2162c62beab20e70d0e89b1216" alt="Qwen 做的兩座機櫃的 5 個角度渲染圖，紅色編號標出 6 處缺失" style="width:1664px;height:400px;object-fit:contain;background:#FFFFFF;border:1px solid #D3D9DE;border-radius:12px">
+<img src="/_blob/9d09ff2162c62beab20e70d0e89b1216" alt="Qwen 做的兩座機櫃的 5 個角度渲染圖，紅色編號標出 6 處缺失" style="width:1664px;height:310px;object-fit:contain;background:#FFFFFF;border:1px solid #D3D9DE;border-radius:12px">
 <div class="row">
-<div class="grow">
-<p class="body"><b>Qwen（上圖）</b></p>
-<ul class="list" style="font-size:26px">
-<li>① Rack A 沒有任何盲板（任務明確要求）</li>
-<li>⑤ Rack B 沒有配線架，線材直接穿過理線器</li>
+<div class="grow col" style="gap:10px">
+<p class="chip qwen">Qwen（上圖，紅色編號）</p>
+<ul class="list" style="font-size:26px;gap:6px">
+<li>① Rack A <span class="k">沒有任何盲板</span>（任務明確要求）</li>
+<li>⑤ Rack B <span class="k">沒有配線架</span>，線材直接穿過理線器</li>
 <li>②③④⑥ 頂板突出、門角破面、後門和設備沒有細節</li>
 </ul>
 </div>
-<div class="grow">
-<p class="body"><b>Opus</b></p>
-<ul class="list" style="font-size:26px">
+<div class="grow col" style="gap:10px">
+<p class="chip opus">Opus</p>
+<ul class="list" style="font-size:26px;gap:6px">
 <li>櫃體 570 mm，比規格窄 30 mm</li>
 <li>門的網孔太大太疏、線束像硬管</li>
 <li>盲板、配線、理線器、腳輪都有</li>
 </ul>
 </div>
 </div>
-<aside>S2 的自動分數只量外框、位置、命名和面數，兩邊都是滿分 40，不評外觀。「量測」類缺失是用程式檢查場景檔得到的；其餘是看渲染圖判斷。外觀建議以人工盲測為準。</aside>
+<p class="take">Qwen 漏掉任務明確要求的<span class="k">盲板和配線架</span>；自動幾何分看不出來（兩邊都是 40 分）。</p>
+<aside>S2 的自動分數只量外框、位置、命名和面數，兩邊都是滿分 40，不評外觀。「沒有盲板」「沒有配線架」是用程式檢查場景檔得到的；其餘是看渲染圖判斷。外觀建議以人工盲測為準。</aside>
 </section>

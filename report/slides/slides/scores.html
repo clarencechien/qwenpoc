@@ -3,18 +3,18 @@
 <p class="eyebrow">10 關成績</p>
 <h2 class="title">照圖面建模兩邊都會；差距在「看照片」和速度</h2>
 </div>
-<table class="t">
-<tr><th style="width:44%">關卡</th><th style="width:12%">Opus</th><th style="width:16%">Qwen</th><th style="width:14%">Opus 用時</th><th style="width:14%">Qwen 用時</th></tr>
-<tr><td>S1 圖面 → 3D 空間（easy）</td><td>97.1</td><td>97.1</td><td>66 秒</td><td>9 分</td></tr>
-<tr><td>S1 圖面 → 3D 空間（hard）</td><td>100</td><td>100</td><td>95 秒</td><td>23 分</td></tr>
-<tr><td>S2 照片 → 機櫃模型（幾何，滿分 40）</td><td>40</td><td>40</td><td>9 分</td><td>17 分</td></tr>
-<tr><td>S3 機櫃擺進空間（easy／hard）</td><td>100／100</td><td>100／100</td><td>2 分</td><td>8–12 分</td></tr>
-<tr class="hl"><td>S1P 現場照片 → 推回佈局</td><td>96.1</td><td>52.6 不及格</td><td>16 分</td><td>58 分</td></tr>
-<tr class="hl"><td>D1 竣工比對：設計圖 vs 現場照片</td><td>100</td><td>60.0 不及格</td><td>9 分</td><td>61 分</td></tr>
-<tr class="hl"><td>D2 空機房佈局設計</td><td>97.2</td><td>86.8</td><td>12 分</td><td>43 分</td></tr>
-<tr><td>D3 冷卻水管 3D 繞行</td><td>100</td><td>99.5</td><td>8 分</td><td>16 分</td></tr>
-<tr><td>D5 依三視圖復刻 CDU</td><td>99.97</td><td>99.05</td><td>154 秒</td><td>38 分</td></tr>
-</table>
-<p class="small">底色：兩邊差 10% 以上的關卡。S2 的自動分數只量幾何，不評外觀。</p>
-<aside>S3 兩關合併成一列以節省空間，報告裡是分開的。D2 雖然 Qwen 過了 80%，但 Opus 多放了 26 櫃。</aside>
+<div class="tbl">
+<div class="tr th"><p class="c1">關卡</p><p class="c">Opus 分數</p><p class="c">Qwen 分數</p><p class="c">Opus 用時</p><p class="c">Qwen 用時</p></div>
+<div class="tr"><p class="c1">S1 圖面 → 3D 空間（easy）</p><p class="c">97.1</p><p class="c">97.1</p><p class="c">66 秒</p><p class="c">9 分</p></div>
+<div class="tr"><p class="c1">S1 圖面 → 3D 空間（hard）</p><p class="c">100</p><p class="c">100</p><p class="c">95 秒</p><p class="c">23 分</p></div>
+<div class="tr"><p class="c1">S2 照片 → 機櫃模型（幾何，滿分 40）</p><p class="c">40</p><p class="c">40</p><p class="c">9 分</p><p class="c">17 分</p></div>
+<div class="tr"><p class="c1">S3 機櫃擺進空間（easy／hard）</p><p class="c">100／100</p><p class="c">100／100</p><p class="c">2 分</p><p class="c">8–12 分</p></div>
+<div class="tr hl"><p class="c1 strong">S1P 現場照片 → 推回佈局</p><p class="c strong">96.1</p><p class="c bad">52.6 不及格</p><p class="c">16 分</p><p class="c bad">58 分</p></div>
+<div class="tr hl"><p class="c1 strong">D1 竣工比對：設計圖 vs 現場照片</p><p class="c strong">100</p><p class="c bad">60.0 不及格</p><p class="c">9 分</p><p class="c bad">61 分</p></div>
+<div class="tr"><p class="c1 strong">D2 空機房佈局設計</p><p class="c strong">97.2</p><p class="c strong">86.8</p><p class="c">12 分</p><p class="c">43 分</p></div>
+<div class="tr"><p class="c1">D3 冷卻水管 3D 繞行</p><p class="c">100</p><p class="c">99.5</p><p class="c">8 分</p><p class="c">16 分</p></div>
+<div class="tr"><p class="c1">D5 依三視圖復刻 CDU</p><p class="c">99.97</p><p class="c">99.05</p><p class="c">154 秒</p><p class="c">38 分</p></div>
+</div>
+<p class="take">Qwen <span class="k">2 關不及格</span>（紅底），都是看現場照片的關卡；給了清楚數字的關卡也能拿 99 分以上。</p>
+<aside>S3 兩關合併成一列以節省空間，報告裡是分開的。D2 雖然 Qwen 過了 80%，但 Opus 多放了 26 櫃。S2 的自動分數只量幾何，不評外觀。及格線是滿分的 80%。</aside>
 </section>
