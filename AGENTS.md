@@ -5,7 +5,7 @@ to run the 10 Blender stages against a self-hosted **Qwen3.8-Flash-Next** endpoi
 numbers next to the reference results. The participant model only ever sees one run directory through
 `harness/qwen_runner.py`.
 
-Human-oriented version of the same procedure (Traditional Chinese): `docs/REPRODUCE.md`. Results and verdict being
+Human-oriented version of the same procedure (Traditional Chinese): `docs/REPRODUCE.md`. Project background, full results, cost data and open tasks for an agent taking over the whole project: `docs/AGENT_HANDOFF.md`. Results and verdict being
 checked: `report/full_report.html`.
 
 ## Hard rules

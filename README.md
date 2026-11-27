@@ -24,7 +24,7 @@ bash scripts/make_keys.sh ~/qwenpoc-keys
 python3 scripts/score_all.py --runs runs/onprem --keys ~/qwenpoc-keys
 ```
 
-詳細步驟：人看 [`docs/REPRODUCE.md`](docs/REPRODUCE.md)；交給 coding agent（Codex、Claude Code）時，agent 會自動讀 [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md)。
+詳細步驟：人看 [`docs/REPRODUCE.md`](docs/REPRODUCE.md)；交給 coding agent（Codex、Claude Code）時，agent 會自動讀 [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md)。接手整個專案（背景、完整成績、費用、待辦）請讀 [`docs/AGENT_HANDOFF.md`](docs/AGENT_HANDOFF.md)。
 
 ## 10 個關卡
 
