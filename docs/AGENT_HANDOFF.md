@@ -52,8 +52,8 @@ Opus 5.5 這兩關是 96.1 和 100。加權總分 Opus 99.1、Qwen 62.7（及格
 | 位置 | 內容 |
 |---|---|
 | `clarencechien/qwenpoc`（本 repo，`main`） | 可重現的評測套件、參考執行紀錄、報告與簡報。給地端團隊或 agent 用 |
-| `clarencechien/opus55poc`，分支 `claude/eloquent-lovelace-4vrek4`，目錄 `datacenter/` | 原始工作區：完整執行目錄（含 `.blend`、渲染圖、檢視圖）、報告產生器 `report/build_full.py`、`report/build_phase1.py`、Gemini 評審 `judge/`、計畫書 `PLAN.md` |
-| `report/full_report.html` | 完整報告（第一＋第二階段），單一檔案、圖片內嵌。原始產生器在 opus55poc 的 `datacenter/report/build_full.py`（需要完整的 runs，本 repo 沒有） |
+| `clarencechien/opus55poc`，分支 `claude/eloquent-lovelace-4vrek4` 的 **commit `b32b206`**，目錄 `datacenter/`（分支最新狀態與 main 只剩指向本 repo 的 README；PR clarencechien/opus55poc#6 應以 squash 合併。取回：`git fetch origin claude/eloquent-lovelace-4vrek4 && git checkout b32b206 -- datacenter`） | 原始工作區：完整執行目錄（含 `.blend`、渲染圖、檢視圖）、報告產生器 `report/build_full.py`、`report/build_phase1.py`、Gemini 評審 `judge/`、計畫書 `PLAN.md`。**這個分支不能刪**，有些東西只存在那裡 |
+| `report/full_report.html` | 完整報告（第一＋第二階段），單一檔案、圖片內嵌。原始產生器在 opus55poc commit `b32b206` 的 `datacenter/report/build_full.py`（需要完整的 runs，本 repo 沒有） |
 | `report/slides.pdf`、`report/slides.html` | 17 頁簡報。原始檔在 `report/slides/`，用 `python3 report/build_slides.py` 重建（PDF 需要 Node.js 和 playwright） |
 | `report/phase1.html` | 第一階段報告（舊版，已被完整報告取代） |
 | claude.ai Artifacts（使用者私人） | 完整報告 `https://claude.ai/artifact/6u5KKzPH9atAQJ7ks4cLrf`；簡報（Slides 類型）`https://claude.ai/artifact/SLQE28476GJziUTeg4DN79`。只有使用者能開，接手的 agent 未必有權限；以 repo 裡的檔案為準 |
@@ -92,7 +92,7 @@ Opus 5.5 這兩關是 96.1 和 100。加權總分 Opus 99.1、Qwen 62.7（及格
 - 效率 30 分 = 各關「最快用時 ÷ 自己用時」的平均。
 - 結果：Opus 99.1 通過；Qwen 62.7 不通過。
 - 換 6 種配分方式，Qwen 都不通過。
-- 計算程式在 `scripts/score_all.py`，報告版在 opus55poc 的 `build_full.py`。
+- 計算程式在 `scripts/score_all.py`，報告版在 opus55poc commit `b32b206` 的 `build_full.py`。
 
 ## 6. 費用（新整理，尚未放進報告和簡報）
 
@@ -163,7 +163,7 @@ python3 -c "import json;R=['easy/s1-r2-high','hard/s1-r1-high','easy/s2-r2-high'
    - 簡報可加一頁「成本」，放在 speed 頁之後。
    - 報告可在第 1 節成績總覽加一欄。
 3. **多跑幾次降低運氣成分**：`scripts/run_all.py --repeat 2`。雲端 Qwen 要花 OpenRouter 額度，先問。
-4. **S2 外觀人工盲測**：把兩邊的 Cycles 渲染圖（opus55poc 的 `runs/*/easy/s2-*/review_cycles/`）匿名排版，請人評。
+4. **S2 外觀人工盲測**：把兩邊的 Cycles 渲染圖（opus55poc commit `b32b206` 的 `datacenter/runs/*/easy/s2-*/review_cycles/`）匿名排版，請人評。
 5. **其餘關卡的程式碼審查**：要用 Gemini，先問使用者是否接受費用。
 6. 簡報如需 PPTX，從 Slides artifact 的 Share › Export 匯出（使用者操作）。
 
