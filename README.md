@@ -63,4 +63,4 @@ Qwen 每一關都比 Opus 慢 1.8–15 倍；S1P 的最長對話 274,507 token �
 | `reference/` | 報告所用的雲端 Opus 與 Qwen 執行紀錄 |
 | `report/` | 完整報告與第一階段報告（單一 HTML 檔）；簡報 `slides.html`（方向鍵翻頁）與 `slides.pdf`，原始檔在 `report/slides/`，用 `report/build_slides.py` 重建 |
 
-來源：從 `clarencechien/opus55poc` 的原始工作區整理而來（分支 `claude/eloquent-lovelace-4vrek4` 的 commit `b32b206`，目錄 `datacenter/`；分支最新狀態只剩一份指向本 repo 的說明）。
+來源：從 `clarencechien/opus55poc` 的原始工作區整理而來（commit `b32b206`，目錄 `datacenter/`，在 opus55poc main 的歷史裡；main 的檔案只剩一份指向本 repo 的說明）。

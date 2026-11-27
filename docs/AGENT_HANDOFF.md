@@ -52,7 +52,7 @@ Opus 5.5 這兩關是 96.1 和 100。加權總分 Opus 99.1、Qwen 62.7（及格
 | 位置 | 內容 |
 |---|---|
 | `clarencechien/qwenpoc`（本 repo，`main`） | 可重現的評測套件、參考執行紀錄、報告與簡報。給地端團隊或 agent 用 |
-| `clarencechien/opus55poc`，分支 `claude/eloquent-lovelace-4vrek4` 的 **commit `b32b206`**，目錄 `datacenter/`（分支最新狀態與 main 只剩指向本 repo 的 README；PR clarencechien/opus55poc#6 應以 squash 合併。取回：`git fetch origin claude/eloquent-lovelace-4vrek4 && git checkout b32b206 -- datacenter`） | 原始工作區：完整執行目錄（含 `.blend`、渲染圖、檢視圖）、報告產生器 `report/build_full.py`、`report/build_phase1.py`、Gemini 評審 `judge/`、計畫書 `PLAN.md`。**這個分支不能刪**，有些東西只存在那裡 |
+| `clarencechien/opus55poc` 的 **commit `b32b206`**，目錄 `datacenter/`（PR clarencechien/opus55poc#6 已於 2026-11-27 以一般 merge 合併：main 的檔案只剩指向本 repo 的 `datacenter/README.md`，但 `b32b206` 在 main 的歷史裡。clone opus55poc 後用 `git checkout b32b206 -- datacenter` 取回） | 原始工作區：完整執行目錄（含 `.blend`、渲染圖、檢視圖）、報告產生器 `report/build_full.py`、`report/build_phase1.py`、Gemini 評審 `judge/`、計畫書 `PLAN.md`。這些只存在 `b32b206` |
 | `report/full_report.html` | 完整報告（第一＋第二階段），單一檔案、圖片內嵌。原始產生器在 opus55poc commit `b32b206` 的 `datacenter/report/build_full.py`（需要完整的 runs，本 repo 沒有） |
 | `report/slides.pdf`、`report/slides.html` | 17 頁簡報。原始檔在 `report/slides/`，用 `python3 report/build_slides.py` 重建（PDF 需要 Node.js 和 playwright） |
 | `report/phase1.html` | 第一階段報告（舊版，已被完整報告取代） |
